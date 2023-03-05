@@ -7,8 +7,16 @@
 		<link rel="stylesheet" type="text/css" href="styles/main.css">
 		<style type="text/css">
 
+h1 {
+	margin-left: 24px;
+	color: red;
+	font-weight: bold;
+	font-size: 2.5em;
+}
+
 .categ h2 {
 	margin-left: 24px;
+	margin-top: 48px;
 }
 
 .categ .sabor {
@@ -16,23 +24,39 @@
 	border: dashed 6px red;
 	margin: 2%;
 	padding: 25px;
-	padding-top: 20px;
+	padding-top: 10px;
+}
+
+.categ .sabor h4 {
+	font-size: 1.5em;
+	margin-bottom: 10px;
 }
 
 .categ .sabor .pricelist {
 	display: flex;
-	flex-direction: row;
+	flex-direction: row-reverse;
 	list-style-type: none;
 }
 
 .categ .sabor .pricelist li {
-	margin-left: 8px;
-	margin-right: 8px;
-	padding: 8px;
-	font-weight: 8px;
+	margin-left: 12px;
+	margin-right: 12px;
+	padding: 14px;
+	font-weight: bold;
 	background-color: red;
 	color: white;
 	border-radius: 14px;
+}
+
+.categ .sabor .pricelist li div {
+	color: yellow;
+	margin-bottom: 4px;
+}
+
+@media only screen and (max-width: 736px) {
+	.categ .sabor {
+		max-width: 100vw
+	}
 }
 		</style>
 	</head>
@@ -49,119 +73,153 @@
 		<h1>Cárdapio</h1>
 		<div class="categ">
 			<h2>Pizzas</h2>
-			<div class="sabor spizza">
+			<div class="sabor trpizza">
 				<h4>Calabresa</h4>
-				<p class="ingr">Cababrea, Cebola, Queijo</p>
+				<p class="ingr">Musssarela, calabresa e cebola.</p>
 				<ul class="pricelist">
 					<li>
-						<div class="price-p">R$ 24,99</div>
+						<div class="price-p">R$ 20,00</div>
 						<label>Tam. P</label>
 					</li>
 					<li>
-						<div class="price-p">R$ 29,99</div>
+						<div class="price-m">R$ 30,00</div>
 						<label>Tam. M</label>
 					</li>
 					<li>
-						<div class="price-p">R$ 35,99</div>
+						<div class="price-g">R$ 35,00</div>
 						<label>Tam. G</label>
 					</li>
 				</ul>
 			</div>
-			<div class="sabor spizza">
-				<h4>Calabresa</h4>
-				<p class="ingr">Cababrea, Cebola, Queijo</p>
+			<div class="sabor trpizza">
+				<h4>Frango & Catupiry</h4>
+				<p class="ingr">Musssarela, frango e catupiry.</p>
 				<ul class="pricelist">
 					<li>
-						<div class="price-p">R$ 24,99</div>
+						<div class="price-p">R$ 20,00</div>
 						<label>Tam. P</label>
 					</li>
 					<li>
-						<div class="price-p">R$ 29,99</div>
+						<div class="price-m">R$ 30,00</div>
 						<label>Tam. M</label>
 					</li>
 					<li>
-						<div class="price-p">R$ 35,99</div>
+						<div class="price-g">R$ 35,00</div>
 						<label>Tam. G</label>
 					</li>
 				</ul>
 			</div>
-			<div class="sabor spizza">
-				<h4>Calabresa</h4>
-				<p class="ingr">Cababrea, Cebola, Queijo</p>
+			<div class="sabor trpizza">
+				<h4>Mussarela</h4>
+				<p class="ingr">Queijo musssarela.</p>
 				<ul class="pricelist">
 					<li>
-						<div class="price-p">R$ 24,99</div>
+						<div class="price-p">R$ 20,00</div>
 						<label>Tam. P</label>
 					</li>
 					<li>
-						<div class="price-p">R$ 29,99</div>
+						<div class="price-m">R$ 30,00</div>
 						<label>Tam. M</label>
 					</li>
 					<li>
-						<div class="price-p">R$ 35,99</div>
+						<div class="price-g">R$ 35,00</div>
 						<label>Tam. G</label>
 					</li>
 				</ul>
 			</div>
-			<div class="sabor spizza">
-				<h4>Calabresa</h4>
-				<p class="ingr">Cababrea, Cebola, Queijo</p>
+			<div class="sabor trpizza">
+				<h4>Marguerita</h4>
+				<p class="ingr">Mussarela, tomate e orégano.</p>
 				<ul class="pricelist">
 					<li>
-						<div class="price-p">R$ 24,99</div>
+						<div class="price-p">R$ 20,00</div>
 						<label>Tam. P</label>
 					</li>
 					<li>
-						<div class="price-p">R$ 29,99</div>
+						<div class="price-m">R$ 30,00</div>
 						<label>Tam. M</label>
 					</li>
 					<li>
-						<div class="price-p">R$ 35,99</div>
+						<div class="price-g">R$ 35,00</div>
+						<label>Tam. G</label>
+					</li>
+				</ul>
+			</div>
+			<div class="sabor trpizza">
+				<h4>3 Queijos</h4>
+				<p class="ingr">Mussarela, cheddar e catupiry.</p>
+				<ul class="pricelist">
+					<li>
+						<div class="price-p">R$ 20,00</div>
+						<label>Tam. P</label>
+					</li>
+					<li>
+						<div class="price-m">R$ 30,00</div>
+						<label>Tam. M</label>
+					</li>
+					<li>
+						<div class="price-g">R$ 35,00</div>
 						<label>Tam. G</label>
 					</li>
 				</ul>
 			</div>
 		</div>
 		<div class="categ">
-			<h2>Bebidas</h2>
-			<div class="sabor sbebida">
-				<h4>Suco Natural</h4>
+			<h2>Pizzas Especiais</h2>
+			<div class="sabor espizza">
+				<h4>Caipira</h4>
+				<p class="ingr">Mussarela, presunto, frango, tomate e orégano.</p>
 				<ul class="pricelist">
 					<li>
-						<div class="price-copo">R$ 4,99</div>
-						<label>Copo</label>
+						<div class="price-p">R$ 22,00</div>
+						<label>Tam. P </label>
 					</li>
 					<li>
-						<div class="price-jarra">R$ 7,99</div>
-						<label>Copo</label>
+						<div class="price-m">R$ 32,00</div>
+						<label>Tam. M</label>
+					</li>
+					<li>
+						<div class="price-g">R$ 37,00</div>
+						<label>Tam. G</label>
 					</li>
 				</ul>
 			</div>
-			<div class="sabor sbebida">
-				<h4>Suco Natural</h4>
+			<div class="sabor espizza">
+				<h4>Portuguesa</h4>
+				<p class="ingr">Mussarela, presunto, tomate, pimentão, cebola e azeitona.</p>
 				<ul class="pricelist">
 					<li>
-						<div class="price-copo">R$ 4,99</div>
-						<label>Copo</label>
+						<div class="price-p">R$ 22,00</div>
+						<label>Tam. P </label>
 					</li>
 					<li>
-						<div class="price-jarra">R$ 7,99</div>
-						<label>Copo</label>
+						<div class="price-m">R$ 32,00</div>
+						<label>Tam. M</label>
+					</li>
+					<li>
+						<div class="price-g">R$ 37,00</div>
+						<label>Tam. G</label>
 					</li>
 				</ul>
 			</div>
-			<div class="sabor sbebida">
-				<h4>Suco Natural</h4>
+			<div class="sabor espizza">
+				<h4>Charque</h4>
+				<p class="ingr">Mussarela, charque e catupiry.</p>
 				<ul class="pricelist">
 					<li>
-						<div class="price-copo">R$ 4,99</div>
-						<label>Copo</label>
+						<div class="price-p">R$ 22,00</div>
+						<label>Tam. P </label>
 					</li>
 					<li>
-						<div class="price-jarra">R$ 7,99</div>
-						<label>Copo</label>
+						<div class="price-m">R$ 32,00</div>
+						<label>Tam. M</label>
 					</li>
-				</ul>			</div>
+					<li>
+						<div class="price-g">R$ 37,00</div>
+						<label>Tam. G</label>
+					</li>
+				</ul>
+			</div>
 		</div>
 
 		<div class="footer">
