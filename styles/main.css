@@ -1,0 +1,72 @@
+:root {
+	--bgColor: white;
+}
+
+body {
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+	font-family: Arial;
+	background-color: var(--bgColor)
+}
+
+.navbar {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+	background-color: red;
+	min-height: 64px;
+	align-items: center;
+}
+
+.navbar h2 {
+	color: white;
+	margin: 0;
+	padding: 0;
+	margin-left: 4%;
+}
+
+.menu {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 0;
+	margin-right: 1em;
+	/*background-color: green;*/
+}
+
+.menu li {
+	margin-left: 0.8em;
+ 	margin-right: 0.8em;
+ 	padding: 0.4em;
+ 	padding-top: 24px;
+ 	padding-bottom: 24px;
+}
+
+.menu li:hover {
+	background-color: darkRed;
+}
+
+.menu li a {
+	text-decoration: none;
+	color: white;
+	font-family: Arial;
+	font-size: 1em;
+}
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	min-height: 200px;
+	margin-top: 12%;
+	justify-content: center;
+	background-color: black;
+	color: white;
+}
+
+.footer small {
+	margin-top: 1em;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Pizzaria Abrarizto</title>
+		<link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="./styles/main.css">
+		<style type="text/css">
+
+.title {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+	margin-bottom: 5em;
+	background-image: url('./images/pizza-background-desktop.jpg');
+	background-size: 100%;
+	-webkit-box-shadow: inset 0px -96px 24px -48px var(--bgColor);
+	-moz-box-shadow: inset 0px -96px 24px -48px var(--bgColor);
+	box-shadow: inset 0px -96px 24px -48px var(--bgColor);
+	padding-top: 3%;
+	padding-bottom: 20%;
+}
+
+.title h1 {
+	font-family: Arial;
+	font-size: 4em;
+	color: white;
+	text-shadow: 12px 10px 14px rgba(0,0,0,0.8);
+	margin-top: 2.2em;
+}
+
+.title .logo {
+	width: 300px;
+	height: 300px;
+	margin-top: 2em;
+	margin-right: 1em;
+}
+
+.pizza {
+	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	width: 72vw;
+}
+
+.tboxes {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.msgbox {
+	max-width: 300px;
+	border: dashed 8px red;
+	margin: 2%;
+	padding: 25px;
+}
+
+@media only screen and (max-width: 736px) {
+	.title {
+		background-image: url('./images/pizza-background-mobile-2.jpg');
+	}
+
+	.title h1 {
+		margin: 0;
+	}
+
+	.title .logo {
+		margin: 0;
+	}
+}
+		</style>
+	</head>
+	<body>
+		<div class="navbar">
+			<h2>Abraristo Pizza's</h2>
+			<ul class="menu">
+				<li><a href="./cardapio.html">Cardápio</a></li>
+				<li><a href="#">Sobre</a></li>
+				<li><a href="#">Início</a></li>
+			</ul>
+		</div>
+		<div class="title">
+			<img class="logo" src="images/logo_.png">
+			<h1>A pizza mais+ <div id="tAdj">saborosa</div></h1>
+		</div>
+		<div class="tboxes">
+			<div class="msgbox">
+				<h3>Lorem Ipsulon</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="msgbox">
+				<h3>Lorem Ipsulon</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="msgbox">
+				<h3>Lorem Ipsulon</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+		<img class="pizza" src="images/pizza-png.webp">
+		<div class="footer">
+			<small>Corpyright All rights reserved</small>
+		</div>
+		<script type="text/javascript">
+const text = document.querySelector('#tAdj')
+const adjectives = [ 'saborosa', 'original', 'moderna', 'irresistível', 'deliciosa' ]
+setInterval(() => {
+	let x
+	do {
+		x = Math.round(Math.random()*(adjectives.length-1))
+	} while (adjectives[x] == text.innerText)
+	text.innerText = adjectives[x]
+}, 1500)
+		</script>
+	</body>
+</html>
